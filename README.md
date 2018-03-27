@@ -3,7 +3,7 @@ alfred-alarmcom
 
 Alfred Workflow for Alarm.com
 
-This project uses selenium (not included), keychain.py, phantomjs and pyalarmdotcom - those files that are included and are governed by their respective licenses. The pyalarmdotcom was modified slightly to accomodate python2. phantomjs is used as is. keychain.py was modified slightly to add to error reporting.
+This project uses keychain.py - those files that are included and are governed by their respective licenses. keychain.py was modified slightly to add to error reporting.
 
 README for Alarm.com
 
