@@ -1,7 +1,7 @@
 import string
 from binascii import hexlify, unhexlify
 import json
-from pyalarmdotcom import Alarmdotcom
+from alarm import AlarmDotCom
 from simplecrypt import encrypt, decrypt
 from alfred import Feedback
 from keychain import Keychain
@@ -44,7 +44,7 @@ def load_db(password=''):
 
 def get_alarm(password=''):
     creds = load_db(password)
-    return Alarmdotcom(creds['username'], creds['password'])
+    return AlarmDotCom(creds['username'], creds['password'])
 
 def execute_command(command=""):
     command = command.lower().strip()
